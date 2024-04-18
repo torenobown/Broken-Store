@@ -146,4 +146,3 @@ const stickyHeader = () => {
 
 stickyHeader();
 
-console.log('GKLDFkldjGKLJFDKLGJFKL')
