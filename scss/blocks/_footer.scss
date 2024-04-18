@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 24px;
+    &__lists__container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    background: #000;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    &-discription {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 16px;
+        color: #fff;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        path {
+            fill: #fff;
+        }
+        li {
+            cursor: pointer;
+            line-height: 20px;
+            &:hover {
+                color: $font-color;
+                transition: 0.4s;
+            }
+        }
+    }
+}

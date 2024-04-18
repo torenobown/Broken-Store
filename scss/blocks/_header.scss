@@ -1,0 +1,191 @@
+$background: #e3e3e3;
+$font-color: #9d9d9d;
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+    gap: 16px;
+    path {
+        fill: #fff;
+    }
+}
+
+nav {
+    position: relative;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    color: #555;
+    path {
+        fill: #555;
+        transition: 0.4s;
+    }
+  }
+  
+  nav ul li::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #555;
+    position: absolute;
+    bottom: 13px; /* Adjust as needed */
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease; /* Add transition */
+    transform: translateX(-50%); /* Center horizontally */
+    
+  }
+  
+  nav ul li:hover::after {
+    width: calc(100% - 22px); /* Устанавливаем ширину линии (ширина контейнера минус отступы) */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем линию */
+  }
+
+.header {
+    &__nav__container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__container {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+    &__logo {
+        max-width: 100%;
+        &-desktop {
+            width: 300px;
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+    &-search {
+        display: flex;
+        position: relative;
+        input {
+            width: 400px;
+            max-width: 100%;
+            height: 35px;
+            border-radius: 0;
+            border: 1px solid #e3e3e3;
+            text-indent: 10px;
+            font-size: 16px;
+        }
+        &__button-desktop {
+            cursor: pointer;
+            position: absolute;
+            border: 0;
+            transition: 0.4s;
+            right: 17px;
+            background: 0;
+            bottom: 1px;
+            
+
+        }
+        &__button-mobile {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                background: #979797;
+                border-radius: 3px;
+            }
+        }
+    }
+    &-phone-number {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        span {
+            color: $font-color;
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+    &-busket {
+        text-decoration: none !important;
+        color: #000;
+        display: flex;
+        gap: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            background: #979797;
+            border-radius: 3px;
+        }
+    }
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        li {
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
+            padding-right: 24px;
+            gap: 7px;
+            font-size: 16px;
+            height: 55px;
+            cursor: pointer;
+        }
+    }
+
+    &__nav__section {
+        background: #000;
+        a {
+            transition: 0.4s;
+            color: #fff;
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}

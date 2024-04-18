@@ -1,0 +1,56 @@
+.swiper {
+  width: 640px;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &-button-prev { 
+    border: 0;
+    background: none;
+  }
+  &-button-next {
+    border: 0;
+    background: none;
+  }
+}
+
+.swiper2 {
+  overflow-x: hidden;
+  position: relative;
+  
+  &-slide {
+    width: 306px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 9999;
+  }
+
+  .swiper-button-next2 {
+    right: 0;
+  }
+
+  .swiper-button-prev2 {
+    left: 0;
+  }
+}
+.swiper3 {
+  margin-bottom: 10px;
+  overflow-x: hidden;
+  position: relative;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &-button-prev3 { 
+    border: 0;
+    background: none;
+  }
+  &-button-next3 {
+    border: 0;
+    background: none;
+  }
+}
+

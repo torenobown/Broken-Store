@@ -1,0 +1,162 @@
+// sm applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .header {
+        &-phone-number {
+            display: none !important;
+        }
+        &__logo {
+            &-desktop {
+                display: none;
+            }
+            &-mobile {
+                display: block !important;
+                width: 100px;
+            }
+        }
+    }
+    .promotions-categories {
+        &__row {
+            justify-content: center;
+        }
+        &-categories__container {
+            display: none !important;
+        }
+        &-promo {
+            &-img {
+                max-width: 60% !important;
+                width: 300px !important;
+                img {
+                    max-width: 100% !important;
+                }
+            }
+        }
+    }
+    .new-products {
+        &__row {
+            justify-content: center;
+        }
+    }
+    .footer {
+        margin-top: 24px;
+        .popular-categories {
+            display: none !important;
+        }
+    }
+    .banner__container {
+        display: none !important;
+    }
+}
+
+// md applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .header {
+        input {
+            max-width: 100%;
+        }
+        &-phone-number {
+            display: none !important;
+        }
+        &__logo {
+            &-desktop {
+                display: none;
+            }
+            &-mobile {
+                display: block !important;
+                width: 100px;
+            }
+        }
+    }
+    .promotions-categories {
+        &__row {
+            justify-content: center;
+        }
+        &-categories__container {
+            display: none !important;
+        }
+    }
+    .new-products {
+        &__row {
+            justify-content: center;
+        }
+    }
+    .footer {
+        .how-we-can-help-you {
+            display: none !important;
+        }
+    }
+}
+
+// lg applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .header {
+        justify-content: space-around;
+        &-phone-number {
+            display: none !important;
+        }
+        &-search {
+            flex-grow: 2;
+            justify-content: flex-end;
+            margin-right: 24px;
+            input {
+                display: none;
+            }
+            &__button-desktop {
+                display: none !important;
+            }
+            &__button-mobile {
+                display: block !important;
+            }
+        }
+    }
+    .promotions-categories {
+        &__row {
+            justify-content: center;
+        }
+    }
+    .new-products {
+        &__row {
+            justify-content: center;
+        }
+    }
+}
+
+// xl applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .header {
+        &-phone-number {
+            display: none !important;
+        }
+    }
+    .promotions-categories {
+        &__row {
+            justify-content: center;
+        }
+    }
+    .new-products {
+        &__row {
+            justify-content: center;
+        }
+    }
+}
+
+// xxl applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    .header {
+        &-phone-number {
+            display: none !important;
+        }
+    }
+    .promotions-categories {
+        &__row {
+            justify-content: center;
+        }
+        &-promo {
+            margin-top: 12px;
+        }
+    }
+    .new-products {
+        &__row {
+            justify-content: center;
+        }
+    }
+}
