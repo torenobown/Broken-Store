@@ -665,6 +665,15 @@ $border: #e5e5e5;
       }
     }
   }
+
+  &__order {
+    &__modal {
+      .modal__content {
+        width: 50vw;
+        height: 60vh;
+      }
+    }
+  }
 }
 
 .form_radio_btn {

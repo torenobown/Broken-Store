@@ -1,6 +1,6 @@
 const startTimer = () => {
   const timerEl = document.querySelector("#promo-time");
-  timerEl.innerHTML = `24:0:00`;
+  timerEl.innerHTML = `24:00:00`;
   let timer = 86400;
 
   const formatTime = (timer) => {
@@ -9,15 +9,17 @@ const startTimer = () => {
     const minutes = secondsInMinute % 60;
     const hour = (secondsInMinute - minutes) / 60;
 
-    return `${hour}:${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+    return `${hour}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
   };
 
   const timerInterval = setInterval(() => {
     timerEl.innerHTML = formatTime(timer);
     timer--;
-  }, 1000);
 
-  if (timer === 0) clearInterval(timerInterval);
+    if (timer < 0) {
+      clearInterval(timerInterval);
+    }
+  }, 1000);
 };
 
 startTimer();

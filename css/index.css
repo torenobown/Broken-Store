@@ -664,6 +664,10 @@ button {
   transition: 0.8s ease all;
   cursor: pointer;
 }
+.basket__order__modal .modal__content {
+  width: 50vw;
+  height: 60vh;
+}
 
 .form_radio_btn {
   display: inline-block;
@@ -1249,6 +1253,10 @@ nav ul li a {
     margin-top: 30px;
     padding: 0 20px;
   }
+  .basket__order__modal .modal__content {
+    width: 70vw;
+    height: 60vh;
+  }
 }
 @media (max-width: 1199.98px) {
   .header-phone-number {
@@ -1307,6 +1315,16 @@ nav ul li a {
   }
   .basket__order__checkout button {
     padding: 20px 40px;
+  }
+}
+@media (max-width: 454px) {
+  .basket__order {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .basket__order__modal .modal__content {
+    width: 90vw;
   }
 }
 

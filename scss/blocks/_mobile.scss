@@ -246,6 +246,17 @@
       padding: 0 20px;
     }
   }
+
+  .basket {
+    &__order {
+      &__modal {
+        .modal__content {
+          width: 70vw;
+          height: 60vh;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -340,6 +351,26 @@
     &__checkout {
       button {
         padding: 20px 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 454px) {
+  .basket {
+    &__order {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .basket {
+    &__order {
+      &__modal {
+        .modal__content {
+          width: 90vw;
+        }
       }
     }
   }
