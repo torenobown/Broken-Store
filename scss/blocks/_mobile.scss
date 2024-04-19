@@ -241,7 +241,7 @@
 
   .basket {
     &__order {
-      display: inline-flex;
+      display: flex;
       margin-top: 30px;
       padding: 0 20px;
     }
@@ -360,18 +360,6 @@
   .basket {
     &__order {
       width: 100%;
-    }
-  }
-}
-
-@media (max-width: 575.98px) {
-  .basket {
-    &__order {
-      &__modal {
-        .modal__content {
-          width: 90vw;
-        }
-      }
     }
   }
 }

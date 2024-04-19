@@ -1249,7 +1249,7 @@ nav ul li a {
     padding-bottom: 12px;
   }
   .basket__order {
-    display: inline-flex;
+    display: flex;
     margin-top: 30px;
     padding: 0 20px;
   }
@@ -1320,11 +1320,6 @@ nav ul li a {
 @media (max-width: 454px) {
   .basket__order {
     width: 100%;
-  }
-}
-@media (max-width: 575.98px) {
-  .basket__order__modal .modal__content {
-    width: 90vw;
   }
 }
 
