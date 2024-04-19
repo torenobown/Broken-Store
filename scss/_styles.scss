@@ -685,6 +685,7 @@ $border: #e5e5e5;
 }
 
 .product {
+  padding-top: 20px;
   &__name {
     font-size: 24px;
     font-weight: 500;
@@ -703,6 +704,7 @@ $border: #e5e5e5;
   &__characteristics-item {
     display: flex;
     align-items: center;
+    gap: 8px;
   }
   &__price {
     font-size: 32px;
