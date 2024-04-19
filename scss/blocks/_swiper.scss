@@ -1,10 +1,11 @@
 .swiper {
-  width: 640px;
+  max-width: 640px;
   img {
     max-width: 100%;
+    height: 100%;
     object-fit: cover;
   }
-  &-button-prev { 
+  &-button-prev {
     border: 0;
     background: none;
   }
@@ -17,7 +18,7 @@
 .swiper2 {
   overflow-x: hidden;
   position: relative;
-  
+
   &-slide {
     width: 306px;
   }
@@ -44,7 +45,7 @@
     max-width: 100%;
     object-fit: cover;
   }
-  &-button-prev3 { 
+  &-button-prev3 {
     border: 0;
     background: none;
   }

@@ -1,43 +1,34 @@
-const swiper3 = new Swiper(".swiper3", {
-    // Optional parameters
+{
+  const swiper3 = new Swiper(".swiper3", {
     loop: true,
-    
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-  
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
     },
     scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-  
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
   });
 
   const swiper2 = new Swiper(".swiper2", {
-    // Optional parameters
     loop: true,
     slidesPerView: 4,
     spaceBetween: 24,
-  
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
     },
-    // Autoplay navigation
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-  
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -65,3 +56,4 @@ const swiper3 = new Swiper(".swiper3", {
       },
     },
   });
+}
