@@ -108,6 +108,14 @@
       display: none;
     }
   }
+
+  .categories {
+    &__title {
+      font: {
+        size: 32px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991.98px) {

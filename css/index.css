@@ -540,13 +540,15 @@ button {
   transform: scale(1.05);
 }
 .categories__container__img {
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .categories__container__img img {
   border-radius: 33px;
   max-width: 100%;
   height: 278.06px;
-  max-height: 100%;
+  object-fit: cover;
 }
 .categories__item-discription {
   position: absolute;
@@ -1133,6 +1135,9 @@ nav ul li:hover::after {
   }
   .footer .how-we-can-help-you {
     display: none;
+  }
+  .categories__title {
+    font-size: 32px;
   }
 }
 @media (max-width: 991.98px) {
