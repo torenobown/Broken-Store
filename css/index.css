@@ -558,7 +558,8 @@ button {
   border-radius: 33px;
   max-width: 100%;
   height: 278.06px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .categories__item-discription {
   position: absolute;
@@ -752,7 +753,9 @@ button {
   line-height: 34px;
   border: 1px solid #e3e3e3;
   border-radius: 33px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /* Checked */
@@ -1048,10 +1051,6 @@ nav ul li a {
   background: 0;
   bottom: 1px;
 }
-.header-search__button-desktop:hover {
-  background: #979797;
-  border-radius: 3px;
-}
 .header-search__button-mobile {
   display: none;
   background: none;
@@ -1117,7 +1116,8 @@ nav ul li a {
 .swiper img {
   max-width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .swiper-button-prev {
   border: 0;
@@ -1151,7 +1151,8 @@ nav ul li a {
 }
 .swiper3 img {
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .swiper3-button-prev3 {
   border: 0;
@@ -1390,6 +1391,4 @@ nav ul li a {
     height: 75vh;
     width: 90vw;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
