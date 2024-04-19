@@ -10,149 +10,116 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="header__container container">
-        <a href="./index.html">
-          <div class="header__logo">
-            <img
-              class="header__logo-desktop"
-              src="./assets/img/g32.svg"
-              alt=""
-            />
-            <img
-              src="./assets/img/logo-mobile.svg"
-              alt=""
-              class="header__logo-mobile"
-            />
-          </div>
-        </a>
-        <div class="header-search">
-          <button class="header-search__button-mobile">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 12 12"
-              fill="#666666"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.0121 9.89258C11.2055 10.1074 11.2055 10.4297 10.9906 10.623L10.3891 11.2246C10.1957 11.4395 9.87344 11.4395 9.65859 11.2246L7.53164 9.09766C7.42422 8.99023 7.38125 8.86133 7.38125 8.73242V8.36719C6.60781 8.96875 5.6625 9.3125 4.63125 9.3125C2.16055 9.3125 0.1625 7.31445 0.1625 4.84375C0.1625 2.39453 2.16055 0.375 4.63125 0.375C7.08047 0.375 9.1 2.39453 9.1 4.84375C9.1 5.89648 8.73477 6.8418 8.15469 7.59375H8.49844C8.62734 7.59375 8.75625 7.6582 8.86367 7.74414L11.0121 9.89258ZM4.63125 7.59375C6.13516 7.59375 7.38125 6.36914 7.38125 4.84375C7.38125 3.33984 6.13516 2.09375 4.63125 2.09375C3.10586 2.09375 1.88125 3.33984 1.88125 4.84375C1.88125 6.36914 3.10586 7.59375 4.63125 7.59375Z"
-                fill="#666666"
-              />
-            </svg>
-          </button>
-          <input placeholder="You searched..." type="search" />
-          <button class="header-search__button-desktop">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 12 12"
-              fill="#666666"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.0121 9.89258C11.2055 10.1074 11.2055 10.4297 10.9906 10.623L10.3891 11.2246C10.1957 11.4395 9.87344 11.4395 9.65859 11.2246L7.53164 9.09766C7.42422 8.99023 7.38125 8.86133 7.38125 8.73242V8.36719C6.60781 8.96875 5.6625 9.3125 4.63125 9.3125C2.16055 9.3125 0.1625 7.31445 0.1625 4.84375C0.1625 2.39453 2.16055 0.375 4.63125 0.375C7.08047 0.375 9.1 2.39453 9.1 4.84375C9.1 5.89648 8.73477 6.8418 8.15469 7.59375H8.49844C8.62734 7.59375 8.75625 7.6582 8.86367 7.74414L11.0121 9.89258ZM4.63125 7.59375C6.13516 7.59375 7.38125 6.36914 7.38125 4.84375C7.38125 3.33984 6.13516 2.09375 4.63125 2.09375C3.10586 2.09375 1.88125 3.33984 1.88125 4.84375C1.88125 6.36914 3.10586 7.59375 4.63125 7.59375Z"
-                fill="#666666"
-              />
-            </svg>
-          </button>
-          <div class="modal header-search__modal">
-            <div class="modal__content"></div>
-          </div>
+  <header>
+    <div class="header__container container">
+      <a href="./index.html">
+        <div class="header__logo">
+          <img
+                  class="header__logo-desktop"
+                  src="./assets/img/g32.svg"
+                  alt=""
+          />
+          <img
+                  src="./assets/img/logo-mobile.svg"
+                  alt=""
+                  class="header__logo-mobile"
+          />
         </div>
-        <div class="header-phone-number">
-          <span>Call 24/9</span>8 800 555 35-35
-        </div>
-        <a href="./basket.html" class="header-busket">
+      </a>
+      <div class="header-search">
+        <button class="header-search__button-mobile">
           <svg
-            width="24"
-            height="24"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 12"
+                  fill="#666666"
+                  xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_4_63)">
-              <path
-                d="M0.665881 2.23717H2.57476L5.29387 12.1097C5.37154 12.3994 5.63796 12.6 5.93756 12.6H14.2946C14.5611 12.6 14.7941 12.4441 14.9051 12.1989L17.9459 5.17889C18.0348 4.96719 18.0126 4.73318 17.8905 4.54374C17.7684 4.3543 17.5576 4.24289 17.3355 4.24289H8.10175C7.73558 4.24289 7.43587 4.54374 7.43587 4.91146C7.43587 5.27917 7.73558 5.58002 8.10175 5.58002H16.3146L13.8508 11.2629H6.437L3.71799 1.39032C3.64032 1.10059 3.3739 0.900024 3.0743 0.900024H0.665881C0.299707 0.900024 0 1.20088 0 1.5686C0 1.93631 0.299707 2.23717 0.665881 2.23717Z"
-                fill="#333438"
-              />
-              <path
-                d="M6.74999 17.1C7.49454 17.1 8.09999 16.4945 8.09999 15.75C8.09999 15.0055 7.49454 14.4 6.74999 14.4C6.00545 14.4 5.39999 15.0055 5.39999 15.75C5.39999 16.4945 6.00545 17.1 6.74999 17.1Z"
-                fill="#333438"
-              />
-              <path
-                d="M15.3 15.75C15.3 16.4945 14.6946 17.1 13.95 17.1C13.2054 17.1 12.6 16.4945 12.6 15.75C12.6 15.0055 13.2054 14.4 13.95 14.4C14.6946 14.4 15.3 15.0055 15.3 15.75Z"
-                fill="#333438"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_4_63">
-                <rect width="18" height="18" fill="white" />
-              </clipPath>
-            </defs>
+            <path
+                    d="M11.0121 9.89258C11.2055 10.1074 11.2055 10.4297 10.9906 10.623L10.3891 11.2246C10.1957 11.4395 9.87344 11.4395 9.65859 11.2246L7.53164 9.09766C7.42422 8.99023 7.38125 8.86133 7.38125 8.73242V8.36719C6.60781 8.96875 5.6625 9.3125 4.63125 9.3125C2.16055 9.3125 0.1625 7.31445 0.1625 4.84375C0.1625 2.39453 2.16055 0.375 4.63125 0.375C7.08047 0.375 9.1 2.39453 9.1 4.84375C9.1 5.89648 8.73477 6.8418 8.15469 7.59375H8.49844C8.62734 7.59375 8.75625 7.6582 8.86367 7.74414L11.0121 9.89258ZM4.63125 7.59375C6.13516 7.59375 7.38125 6.36914 7.38125 4.84375C7.38125 3.33984 6.13516 2.09375 4.63125 2.09375C3.10586 2.09375 1.88125 3.33984 1.88125 4.84375C1.88125 6.36914 3.10586 7.59375 4.63125 7.59375Z"
+                    fill="#666666"
+            />
           </svg>
-          3
-        </a>
-        <div class="burger">
-          <button class="burger__button">
-            <span></span><span></span><span></span>
-          </button>
-          <div class="burger__menu">
-            <nav>
-              <ul>
-                <li class="header__nav-categories">
-                  <a href="./categories.html"
-                    ><svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 1.75H8.75V3.5H0V1.75Z" fill="#434343" />
-                      <path d="M0 10.5H11.375V12.25H0V10.5Z" fill="#434343" />
-                      <path d="M14 6.125H0V7.875H14V6.125Z" fill="#434343" />
-                    </svg>
-                    All categories</a
-                  >
-                </li>
-                <li><a href="#">Home</a></li>
-                <li>
-                  <a href="https://www.bequiet.com/en/psucalculator"
-                    >PSU Calculator</a
-                  >
-                </li>
-                <li><a href="./contacts.html">Contacts</a></li>
-              </ul>
-              <div class="line"></div>
-            </nav>
-          </div>
+        </button>
+        <input placeholder="You searched..." type="search" />
+        <button class="header-search__button-desktop">
+          <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 12"
+                  fill="#666666"
+                  xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+                    d="M11.0121 9.89258C11.2055 10.1074 11.2055 10.4297 10.9906 10.623L10.3891 11.2246C10.1957 11.4395 9.87344 11.4395 9.65859 11.2246L7.53164 9.09766C7.42422 8.99023 7.38125 8.86133 7.38125 8.73242V8.36719C6.60781 8.96875 5.6625 9.3125 4.63125 9.3125C2.16055 9.3125 0.1625 7.31445 0.1625 4.84375C0.1625 2.39453 2.16055 0.375 4.63125 0.375C7.08047 0.375 9.1 2.39453 9.1 4.84375C9.1 5.89648 8.73477 6.8418 8.15469 7.59375H8.49844C8.62734 7.59375 8.75625 7.6582 8.86367 7.74414L11.0121 9.89258ZM4.63125 7.59375C6.13516 7.59375 7.38125 6.36914 7.38125 4.84375C7.38125 3.33984 6.13516 2.09375 4.63125 2.09375C3.10586 2.09375 1.88125 3.33984 1.88125 4.84375C1.88125 6.36914 3.10586 7.59375 4.63125 7.59375Z"
+                    fill="#666666"
+            />
+          </svg>
+        </button>
+        <div class="modal header-search__modal">
+          <div class="modal__content"></div>
         </div>
       </div>
-      <section class="header__nav__section" id="navbar">
-        <div class="header__nav__container container">
+      <div class="header-phone-number">
+        <span>Call 24/9</span>8 800 555 35-35
+      </div>
+      <a href="./basket.html" class="header-busket">
+        <svg
+                width="24"
+                height="24"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_4_63)">
+            <path
+                    d="M0.665881 2.23717H2.57476L5.29387 12.1097C5.37154 12.3994 5.63796 12.6 5.93756 12.6H14.2946C14.5611 12.6 14.7941 12.4441 14.9051 12.1989L17.9459 5.17889C18.0348 4.96719 18.0126 4.73318 17.8905 4.54374C17.7684 4.3543 17.5576 4.24289 17.3355 4.24289H8.10175C7.73558 4.24289 7.43587 4.54374 7.43587 4.91146C7.43587 5.27917 7.73558 5.58002 8.10175 5.58002H16.3146L13.8508 11.2629H6.437L3.71799 1.39032C3.64032 1.10059 3.3739 0.900024 3.0743 0.900024H0.665881C0.299707 0.900024 0 1.20088 0 1.5686C0 1.93631 0.299707 2.23717 0.665881 2.23717Z"
+                    fill="#333438"
+            />
+            <path
+                    d="M6.74999 17.1C7.49454 17.1 8.09999 16.4945 8.09999 15.75C8.09999 15.0055 7.49454 14.4 6.74999 14.4C6.00545 14.4 5.39999 15.0055 5.39999 15.75C5.39999 16.4945 6.00545 17.1 6.74999 17.1Z"
+                    fill="#333438"
+            />
+            <path
+                    d="M15.3 15.75C15.3 16.4945 14.6946 17.1 13.95 17.1C13.2054 17.1 12.6 16.4945 12.6 15.75C12.6 15.0055 13.2054 14.4 13.95 14.4C14.6946 14.4 15.3 15.0055 15.3 15.75Z"
+                    fill="#333438"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_4_63">
+              <rect width="18" height="18" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        3
+      </a>
+      <div class="burger">
+        <button class="burger__button">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="burger__menu">
           <nav>
             <ul>
               <li class="header__nav-categories">
                 <a href="./categories.html"
-                  ><svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 1.75H8.75V3.5H0V1.75Z" fill="#434343" />
-                    <path d="M0 10.5H11.375V12.25H0V10.5Z" fill="#434343" />
-                    <path d="M14 6.125H0V7.875H14V6.125Z" fill="#434343" />
-                  </svg>
+                ><svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1.75H8.75V3.5H0V1.75Z" fill="#434343" />
+                  <path d="M0 10.5H11.375V12.25H0V10.5Z" fill="#434343" />
+                  <path d="M14 6.125H0V7.875H14V6.125Z" fill="#434343" />
+                </svg>
                   All categories</a
                 >
               </li>
-              <li><a href="#">Home</a></li>
+              <li><a href="./index.html">Home</a></li>
               <li>
                 <a href="https://www.bequiet.com/en/psucalculator"
-                  >PSU Calculator</a
+                >PSU Calculator</a
                 >
               </li>
               <li><a href="./contacts.html">Contacts</a></li>
@@ -160,8 +127,41 @@
             <div class="line"></div>
           </nav>
         </div>
-      </section>
-    </header>
+      </div>
+    </div>
+    <section class="header__nav__section" id="navbar">
+      <div class="header__nav__container container">
+        <nav>
+          <ul>
+            <li class="header__nav-categories">
+              <a href="./categories.html"
+              ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1.75H8.75V3.5H0V1.75Z" fill="#434343" />
+                <path d="M0 10.5H11.375V12.25H0V10.5Z" fill="#434343" />
+                <path d="M14 6.125H0V7.875H14V6.125Z" fill="#434343" />
+              </svg>
+                All categories</a
+              >
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="https://www.bequiet.com/en/psucalculator"
+              >PSU Calculator</a
+              >
+            </li>
+            <li><a href="./contacts.html">Contacts</a></li>
+          </ul>
+          <div class="line"></div>
+        </nav>
+      </div>
+    </section>
+  </header>
     <main>
       <section class="product">
         <div class="container product__container">
