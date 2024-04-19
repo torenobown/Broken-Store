@@ -528,6 +528,8 @@ $border: #e5e5e5;
     padding-left: 24px;
   }
   &__item {
+    display: flex;
+    justify-content: center;
     padding-top: 24px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -536,8 +538,6 @@ $border: #e5e5e5;
     }
   }
   &__container__img {
-    display: flex;
-    justify-content: center;
     position: relative;
     img {
       border-radius: 33px;

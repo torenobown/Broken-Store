@@ -532,6 +532,8 @@ button {
   padding-left: 24px;
 }
 .categories__item {
+  display: flex;
+  justify-content: center;
   padding-top: 24px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -540,8 +542,6 @@ button {
   transform: scale(1.05);
 }
 .categories__container__img {
-  display: flex;
-  justify-content: center;
   position: relative;
 }
 .categories__container__img img {
@@ -916,7 +916,7 @@ nav ul li:hover::after {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 24px;
 }
 .header__logo {
