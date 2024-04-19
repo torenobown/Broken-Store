@@ -1,4 +1,5 @@
 const startTimer = () => {
+  const explosionAtTheEndOfTheTimer = true;
   const timerEl = document.querySelector("#promo-time");
   timerEl.innerHTML = `24:00:00`;
   let timer = 86400;
@@ -18,6 +19,12 @@ const startTimer = () => {
 
     if (timer < 0) {
       clearInterval(timerInterval);
+      if (explosionAtTheEndOfTheTimer) {
+        document.body.insertAdjacentHTML(
+          "beforeend",
+          `<video src="../assets/img/ksas.mp4" autoplay style="position: fixed; width: 100vw; height: 100vh; inset: 0; z-index: 9999999; object-fit: cover"></video>`,
+        );
+      }
     }
   }, 1000);
 };
