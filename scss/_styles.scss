@@ -5,6 +5,19 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
+
+.body_backdrop {
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    z-index: 9998;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -770,9 +783,9 @@ $border: #e5e5e5;
   }
 
   &__content {
-    width: 300px;
-    height: 200px;
-    background: #000;
+    width: 70vw;
+    height: 40vh;
+    background: #fff;
     border-radius: 12px;
   }
 }
@@ -831,7 +844,7 @@ $border: #e5e5e5;
     width: 50vw;
     height: 100vh;
 
-    background: #000;
+    background: #fff;
   }
 
   &_open {

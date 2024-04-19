@@ -8,6 +8,16 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.body_backdrop::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  z-index: 9998;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 a {
   text-decoration: none;
 }
@@ -767,9 +777,9 @@ button {
   transition: 0.2s;
 }
 .modal__content {
-  width: 300px;
-  height: 200px;
-  background: #000;
+  width: 70vw;
+  height: 40vh;
+  background: #fff;
   border-radius: 12px;
 }
 
@@ -814,7 +824,7 @@ button {
   visibility: hidden;
   width: 50vw;
   height: 100vh;
-  background: #000;
+  background: #fff;
 }
 .burger_open .burger__menu {
   transition: 0.2s;
@@ -884,33 +894,41 @@ nav ul li a {
   color: #333;
 }
 
-nav ul li a:hover {
-  color: #555;
+@media (hover: hover) {
+  nav ul li a:hover {
+    color: #555;
+  }
+  nav ul li a:hover path {
+    fill: #555;
+    transition: 0.4s;
+  }
+  nav ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #555;
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+  }
+  nav ul li:hover::after {
+    width: calc(100% - 22px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
-nav ul li a:hover path {
-  fill: #555;
-  transition: 0.4s;
+@media (hover: none) {
+  nav ul li a {
+    color: #555;
+  }
+  nav ul li a path {
+    fill: #555;
+    transition: 0.4s;
+  }
 }
-
-nav ul li::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0;
-  background-color: #555;
-  position: absolute;
-  bottom: 13px; /* Adjust as needed */
-  left: 50%;
-  transition: width 0.3s ease, left 0.3s ease; /* Add transition */
-  transform: translateX(-50%); /* Center horizontally */
-}
-
-nav ul li:hover::after {
-  width: calc(100% - 22px); /* Устанавливаем ширину линии (ширина контейнера минус отступы) */
-  left: 50%;
-  transform: translateX(-50%); /* Центрируем линию */
-}
-
 .header__nav__container {
   display: flex;
   justify-content: flex-start;
@@ -935,6 +953,18 @@ nav ul li:hover::after {
 .header-search {
   display: flex;
   position: relative;
+}
+.header-search__modal .modal__content {
+  padding: 30px;
+}
+.header-search__modal .modal__content input {
+  width: 100%;
+  max-width: 100%;
+  height: 35px;
+  border-radius: 0;
+  border: 2px solid #e3e3e3;
+  text-indent: 10px;
+  font-size: 16px;
 }
 .header-search input {
   width: 400px;
@@ -1119,6 +1149,10 @@ nav ul li:hover::after {
   .popular-products-discription {
     padding-top: 24px;
   }
+  .modal__content {
+    width: 90vw;
+    height: 50vh;
+  }
 }
 @media (max-width: 767.98px) {
   .header input {
@@ -1167,6 +1201,9 @@ nav ul li:hover::after {
   .basket__item {
     flex-direction: column;
   }
+  .promotions-categories-promo {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 991.98px) {
   .header {
@@ -1202,7 +1239,7 @@ nav ul li:hover::after {
     flex-direction: column;
   }
   .burger__menu nav a {
-    color: #fff;
+    color: #000;
   }
   .contacts-form {
     padding-bottom: 12px;

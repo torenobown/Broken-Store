@@ -4,11 +4,13 @@
 
   burgerButton.addEventListener("click", () => {
     burgerMenu.classList.toggle("burger_open");
+    document.body.classList.toggle("body_backdrop");
   });
 
   document.body.addEventListener("click", (e) => {
     if (!e.target.matches(".burger__button")) {
       burgerMenu.classList.remove("burger_open");
+      document.body.classList.remove("body_backdrop");
     }
   });
 }
