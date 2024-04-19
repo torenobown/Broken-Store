@@ -1,7 +1,7 @@
 const startTimer = () => {
   const explosionAtTheEndOfTheTimer = true;
   const timerEl = document.querySelector("#promo-time");
-  timerEl.innerHTML = `24:00:00`;
+  timerEl.innerHTML = `00:05:00`;
   let timer = 300;
 
   const formatTime = (timer) => {

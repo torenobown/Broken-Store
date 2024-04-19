@@ -664,9 +664,76 @@ button {
   transition: 0.8s ease all;
   cursor: pointer;
 }
+.basket__order__modal {
+  /* Clearfix */
+}
 .basket__order__modal .modal__content {
   width: 50vw;
   height: 60vh;
+  display: grid;
+  place-items: center;
+}
+.basket__order__modal form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+}
+.basket__order__modal form input,
+.basket__order__modal form button {
+  border: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  font-family: "Merriweather", sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  resize: none;
+}
+.basket__order__modal form input:focus,
+.basket__order__modal form button:focus {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.basket__order__modal form #input-submit {
+  color: white;
+  background: #000;
+  cursor: pointer;
+}
+.basket__order__modal form #input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.basket__order__modal form textarea {
+  height: 126px;
+}
+.basket__order__modal .half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+.basket__order__modal .right {
+  width: 50%;
+}
+.basket__order__modal .left {
+  margin-right: 2%;
+}
+@media (max-width: 480px) {
+  .basket__order__modal .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+.basket__order__modal .cf:before,
+.basket__order__modal .cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.basket__order__modal .cf:after {
+  clear: both;
 }
 
 .form_radio_btn {
@@ -851,14 +918,7 @@ button {
 }
 
 nav ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
-  position: relative;
-}
-
-nav ul li {
-  display: inline-block;
 }
 
 nav a {
@@ -1157,6 +1217,9 @@ nav ul li a {
     width: 90vw;
     height: 50vh;
   }
+  .basket__order .modal__content {
+    height: 80vh;
+  }
 }
 @media (max-width: 767.98px) {
   .header input {
@@ -1320,6 +1383,12 @@ nav ul li a {
 @media (max-width: 454px) {
   .basket__order {
     width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .basket__order .modal__content {
+    height: 75vh;
+    width: 90vw;
   }
 }
 
