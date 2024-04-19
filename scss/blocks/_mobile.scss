@@ -159,6 +159,12 @@
       justify-content: flex-start;
     }
   }
+
+  .basket {
+    &__item {
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -219,6 +225,14 @@
   .contacts {
     &-form {
       padding-bottom: 12px;
+    }
+  }
+
+  .basket {
+    &__order {
+      display: inline-flex;
+      margin-top: 30px;
+      padding: 0 20px;
     }
   }
 }
@@ -307,6 +321,14 @@
 
       input {
         width: 50%;
+      }
+    }
+  }
+
+  .basket__order {
+    &__checkout {
+      button {
+        padding: 20px 40px;
       }
     }
   }
