@@ -55,6 +55,10 @@
       width: 70vw;
     }
   }
+
+  .swiper {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -160,6 +164,12 @@
       }
     }
   }
+
+  .contacts {
+    &-form {
+      padding-bottom: 12px;
+    }
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -190,8 +200,9 @@
     &__row {
       justify-content: center;
     }
+
     &-promo {
-      margin-top: 12px;
+      justify-content: center;
     }
   }
   .new-products {

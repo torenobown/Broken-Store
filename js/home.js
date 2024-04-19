@@ -38,6 +38,7 @@ startTimer();
 
   const swiper2 = new Swiper(".swiper2", {
     loop: true,
+    spaceBetween: 24,
     navigation: {
       nextEl: ".swiper-button-next2",
       prevEl: ".swiper-button-prev2",
@@ -50,15 +51,15 @@ startTimer();
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 24,
       },
       576: {
         slidesPerView: 2,
-        spaceBetween: 24,
+      },
+      767: {
+        slidesPerView: 3,
       },
       1400: {
         slidesPerView: 4,
-        spaceBetween: 24,
       },
     },
   });
