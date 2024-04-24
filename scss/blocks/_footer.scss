@@ -25,6 +25,14 @@
             fill: #fff;
         }
         li {
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: $font-color;
+                transition: 0.4s;
+                }
+            }
             cursor: pointer;
             line-height: 20px;
             &:hover {

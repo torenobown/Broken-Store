@@ -171,16 +171,15 @@ button {
   font-size: 15px;
   font-weight: 400;
   max-width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   padding: 40px 24px;
-  height: 450px;
+  height: 350px;
 }
 .new-products-item img {
   max-width: 100%;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  max-height: 270px;
+  max-height: 150px;
 }
 .new-products-item-text {
   margin-top: 50px;
@@ -235,18 +234,21 @@ button {
   position: relative;
   display: flex;
   margin-top: 24px;
-  border-radius: 33px;
   border: 1px solid #e5e5e5;
+  border-radius: 33px;
   color: #232323;
   font-size: 15px;
   font-weight: 400;
   max-width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   padding: 40px 24px;
+  height: 350px;
 }
 .popular-products-item img {
   max-width: 100%;
+  max-height: 150px;
 }
 .popular-products-item-text {
   margin-top: 50px;
@@ -295,15 +297,15 @@ button {
   font-size: 15px;
   font-weight: 400;
   max-width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 40px 24px;
-  height: 450px;
+  height: 350px;
 }
 .last-viewed-item img {
   max-width: 100%;
-  max-height: 270px;
+  max-height: 150px;
 }
 .last-viewed-item-text {
   line-height: 30px;
@@ -368,6 +370,14 @@ button {
 .footer-list li {
   cursor: pointer;
   line-height: 20px;
+}
+.footer-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-list li a:hover {
+  color: #666666;
+  transition: 0.4s;
 }
 .footer-list li:hover {
   color: #666666;
