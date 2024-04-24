@@ -2,7 +2,7 @@ const startTimer = () => {
   const explosionAtTheEndOfTheTimer = true;
   const timerEl = document.querySelector("#promo-time");
   timerEl.innerHTML = `00:05:00`;
-  let timer = 300;
+  let timer = 3600;
 
   const formatTime = (timer) => {
     const seconds = timer % 60;

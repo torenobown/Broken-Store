@@ -287,23 +287,25 @@ button {
 .last-viewed-item {
   cursor: pointer;
   position: relative;
-  border-radius: 33px;
   display: flex;
   margin-top: 24px;
   border: 1px solid #e5e5e5;
+  border-radius: 33px;
   color: #232323;
   font-size: 15px;
   font-weight: 400;
   max-width: 100%;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   padding: 40px 24px;
+  height: 450px;
 }
 .last-viewed-item img {
   max-width: 100%;
+  max-height: 270px;
 }
 .last-viewed-item-text {
-  margin-top: 50px;
   line-height: 30px;
 }
 .last-viewed-item-text-name {
